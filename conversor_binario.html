@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Decimal Binario</title>
+    <script>
+            function converterParaBinario(){
+                var decimal = document.getElementById("decimalInput").value;
+                if(decimal == ""){
+                    alert ("Digite o número");
+                    return;
+                }
+                var binario = parseInt (decimal).toString(2);
+                document.getElementById ("resultado").innerText = "O número Binário é: " + binario;
+            }
+    </script>
+</head>
+<body>
+
+    <h1>CONVERSO DE DECIMAL PARA BINÁRIO</h1>
+    <hr>
+    <br>
+    <p>Digite um número Decimal</p>
+    <!-- Caixa de entrada de número decimal-->
+
+    <input text="number" id="decimalInput"  placeholder="Digite um número decimal">
+    <button onclick="converterParaBinario()">CONVERTER</button>
+
+    <p id="resultado"></P>
+</body>
+</html>
